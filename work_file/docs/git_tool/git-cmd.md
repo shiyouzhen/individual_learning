@@ -14,6 +14,14 @@ Git是一个分布式版本管理系统，是为了更好地管理Linux内核开
     * 白话就是初始化仓库，创建一个空的仓库或者重新初始化已经存在的一个git仓库(*Create an empty Git repository or reinitialize an existing one*)
 
 ---
+- **git remote -v**
+    * 查看远程分支地址  
+    ```
+    origin	git@github.com:shiyouzhen/individual_learning.git (fetch)
+    origin	git@github.com:shiyouzhen/individual_learning.git (push)
+    ```
+
+---
 - **git clone**  
     * 基础用法：`git clone XXX`，从远程仓库XXX下载代码
     * 添加参数：“git clone --depth=1 仓库地址 --recursive” 与 ”git clone 仓库地址“**区别：**  
@@ -30,16 +38,17 @@ Git是一个分布式版本管理系统，是为了更好地管理Linux内核开
 
 ---
 - **git fetch**   
-执行pull，远程数据库的内容就会自动合并。但是，有时只是想确认本地数据库的内容而不想合并。这种情况下，使用fetch
+    * 执行pull，远程数据库的内容就会自动合并。但是，有时只是想确认本地数据库的内容而不想合并。这种情况下，使用fetch
 个人感觉最大的用途是，同步更新远程所有的分支（别的同学新建或删除已有分支），基本用法同git pull
-常用可选参数：-a: 附加到.git/FETCH_HEAD而不是覆盖 -p:修剪远程跟踪分支不再远程
-
+常用可选参数：-a: 附加到.git/FETCH_HEAD而不是覆盖 -p:修剪远程跟踪分支不在远程(git branch -a可以看到最新的分支跟踪)
+    * 基本用法：git fetch (oring XXX)
 
     !!! note  
     git pull = git fetch + git merge
 
 ---
-- **git merge**   
+- **git merge**  
+    - 
 - **git branch**
 - **git checkout**  
 - **git status**  

@@ -29,9 +29,15 @@ Git是一个分布式版本管理系统，是为了更好地管理Linux内核开
     * 本地没有修改，会执行fast-forward操作  
 
 ---
-- **git fetch** 
+- **git fetch**   
 执行pull，远程数据库的内容就会自动合并。但是，有时只是想确认本地数据库的内容而不想合并。这种情况下，使用fetch
+个人感觉最大的用途是，同步更新远程所有的分支（别的同学新建或删除已有分支），基本用法同git pull
+常用可选参数：-a -p
 
+    !!! note  
+    git pull = git fetch + git merge
+
+---
 - **git merge**   
 - **git branch**
 - **git checkout**  

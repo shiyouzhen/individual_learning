@@ -39,8 +39,8 @@ Git是一个分布式版本管理系统，是为了更好地管理Linux内核开
 ---
 - **git fetch**   
     * 执行pull，远程数据库的内容就会自动合并。但是，有时只是想确认本地数据库的内容而不想合并。这种情况下，使用fetch
-个人感觉最大的用途是，同步更新远程所有的分支（别的同学新建或删除已有分支），基本用法同git pull
-常用可选参数：-a: 附加到.git/FETCH_HEAD而不是覆盖 -p:修剪远程跟踪分支不在远程(git branch -a可以看到最新的分支跟踪)
+    个人感觉最大的用途是，同步更新远程所有的分支（别的同学新建或删除已有分支），基本用法同git pull
+    常用可选参数：-a: 附加到.git/FETCH_HEAD而不是覆盖 -p:修剪远程跟踪分支不在远程(git branch -a可以看到最新的分支跟踪)
     * 基本用法：git fetch (oring XXX)
 
     !!! note  
@@ -48,7 +48,13 @@ Git是一个分布式版本管理系统，是为了更好地管理Linux内核开
 
 ---
 - **git merge**  
-    - 
+    - 基本用法：git merge <commit> 该命令将指定分支导入到HEAD指定的分支。
+    举例：先切换master分支，然后把feature分支导入到master分支。   
+    ```
+    git checkout master
+    Switched to branch 'master'
+    ```
+    
 - **git branch**
 - **git checkout**  
 - **git status**  

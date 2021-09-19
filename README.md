@@ -1,2 +1,2 @@
 # git-learn
-the repository for learning git
+the repository for learning c++

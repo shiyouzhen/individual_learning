@@ -1,0 +1,26 @@
+site_name: C++个人总结
+
+nav:
+  - Home: index.md
+  - 目录:
+      - 程序员必备技能:
+        - 智能指针: smart_ptr/index.md
+        - c++模型探究: model/index.md
+        - 算法: algorithm/index.md
+        - 数据结构: data_structure/index.md
+      - 常用工具:
+        - git相关知识: git_tool/index.md
+
+theme:
+  name: readthedocs
+  font: false #去掉 Google Roboto
+
+extra:
+  version: 1.0
+
+markdown_extensions:
+  - toc
+  - admonition
+  - def_list
+
+copyright: Copyright &copy; 2021-. Maintained by <b>SYZ</b>. All rights reserved.
